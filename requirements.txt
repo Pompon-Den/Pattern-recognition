@@ -1,0 +1,9 @@
+# Python 3.12
+numpy
+matplotlib
+scikit-learn
+tensorflow==2.20.0
+jupyterlab
+nbclient
+nbformat
+ipykernel
