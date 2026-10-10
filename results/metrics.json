@@ -1,0 +1,120 @@
+{
+  "datasets": {
+    "mnist": {
+      "sha256": "731c5ac602752760c8e48fbffcf8c3b850d9dc2a2aedcf2cc48468fc17b673d1"
+    },
+    "cifar10": {
+      "sha256": "6d958be074577803d12ecdefd02955f39262c83c16fe9348329d7fe0b5c001ce"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows",
+    "device": "CPU",
+    "tensorflow_devices": [
+      {
+        "name": "/physical_device:CPU:0",
+        "type": "CPU"
+      }
+    ],
+    "tensorflow_intra_op_threads": 6,
+    "tensorflow_inter_op_threads": 2,
+    "packages": {
+      "numpy": "2.5.3",
+      "matplotlib": "3.11.2",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "tensorflow": "2.20.0",
+      "keras": "3.15.1",
+      "jupyterlab": "4.6.4",
+      "nbclient": "0.11.0",
+      "nbformat": "5.11.1",
+      "ipykernel": "7.4.0"
+    }
+  },
+  "seed": 42,
+  "gradient_descent": {
+    "samples": 100,
+    "updates": 400,
+    "learning_rate": 0.01,
+    "training_mse": 1.212067,
+    "least_squares_training_mse": 0.806585
+  },
+  "mnist_classification": {
+    "train_samples": 60000,
+    "test_samples": 10000,
+    "knn_test_accuracy": 0.9627,
+    "svm_test_accuracy": 0.9792
+  },
+  "cifar10_classification": {
+    "classical_train_samples": 5000,
+    "neural_train_samples": 45000,
+    "validation_samples": 5000,
+    "test_samples": 10000,
+    "neural_epochs": 10,
+    "batch_size": 64,
+    "knn_test_accuracy": 0.2727,
+    "svm_test_accuracy": 0.31,
+    "mlp_test_accuracy": 0.4838,
+    "cnn_test_accuracy": 0.6997
+  },
+  "denoising_autoencoder": {
+    "train_samples": 54000,
+    "validation_samples": 6000,
+    "test_samples": 10000,
+    "epochs": 1,
+    "batch_size": 128,
+    "noise_std": 0.5,
+    "noisy_input_test_mse": 0.115886,
+    "reconstruction_test_mse": 0.023788
+  },
+  "variational_autoencoder": {
+    "train_samples": 54000,
+    "validation_samples": 6000,
+    "test_samples": 10000,
+    "epochs": 1,
+    "batch_size": 128,
+    "latent_dim": 2,
+    "test_loss": 175.975647,
+    "test_reconstruction_loss": 171.27916,
+    "test_kl_loss": 4.696514,
+    "mean_latent_reconstruction_test_mse": 0.05456
+  },
+  "executions": {
+    "01_gradient_descent_from_scratch.ipynb": {
+      "state": "completed",
+      "started_utc": "2026-10-10T10:14:28.061124+00:00",
+      "code_sha256": "986c0d5d359aed3f115e3d6e8b9e4c8106976cb0130f53e1c897c843679d0032",
+      "cell": "plots",
+      "elapsed_seconds": 4.9
+    },
+    "02_mnist_knn_svm.ipynb": {
+      "state": "completed",
+      "started_utc": "2026-10-10T10:14:32.957297+00:00",
+      "code_sha256": "1ca4e25cf3e1923cedd25d62493b521ef866dd0f71e6d372a89d86796fbbd9f0",
+      "cell": "comparison-and-examples",
+      "elapsed_seconds": 397.5
+    },
+    "04_denoising_autoencoder.ipynb": {
+      "state": "completed",
+      "started_utc": "2026-10-10T10:21:48.327298+00:00",
+      "code_sha256": "dfbfe006e6689d1eab9095fc13cdceecd81ef4571a6258d1ff5b2c3dd6532af0",
+      "cell": "examples",
+      "elapsed_seconds": 49.8
+    },
+    "05_variational_autoencoder.ipynb": {
+      "state": "completed",
+      "started_utc": "2026-10-10T10:22:38.149390+00:00",
+      "code_sha256": "cc32cfcad9ef706a3dbe128769fc1c90fee5d771e9fc6d22a86b7877ff47fd51",
+      "cell": "latent-scatter",
+      "elapsed_seconds": 49.0
+    },
+    "03_cifar10_model_comparison.ipynb": {
+      "state": "completed",
+      "started_utc": "2026-10-10T10:31:13.790974+00:00",
+      "code_sha256": "09ecf189e9e0fd5183e8a436811162a4e88801cf1300d92f264a103275abbe77",
+      "cell": "examples",
+      "elapsed_seconds": 622.9
+    }
+  }
+}
